@@ -15,20 +15,22 @@ const Register = () => {
 
   return (
     <>
-      {/* <div class="p-30 d-flex align-content-end flex-wrap">
+      {/* <Stack direction="horizontal" gap={5}  >
         <div>
-          <img src={Logo} alt="Register" width="400" />
-        </div> */}
-        <Form onSubmit={registerUser} width="400">
+          <img src={Logo} alt="Register" width={600} />
+        </div>  */}
+        <Form onSubmit={registerUser}>
           <Row
             style={{
+              paddingTop: "10%",
               height: "100vh",
               justifyContent: "center",
-              paddingTop: "20%",
             }}
           >
             <Col xs={6}>
-              <Stack gap={3}>
+              <Stack 
+
+              gap={3}>
                 <h2>Register</h2>
 
                 <Form.Control
@@ -76,7 +78,7 @@ const Register = () => {
             </Col>
           </Row>
         </Form>
-    {/* </div> */}
+    {/* </Stack> */}
     </>
   );
 };

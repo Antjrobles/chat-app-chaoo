@@ -1,5 +1,3 @@
-
-
 import { useEffect } from "react";
 import { createContext, useCallback, useState } from "react";
 import { baseUrl, postRequest } from "../utils/service";
@@ -22,7 +20,7 @@ export const AuthContextProvider = ({ children }) => {
     password: "",
   });
 
-  console.log("User:", user);
+  console.log("Userr:", user);
   console.log("registerError:", registerError);
   console.log("isRegisterLoading:", isRegisterLoading);
   console.log("loginError:", loginError);
@@ -87,7 +85,7 @@ export const AuthContextProvider = ({ children }) => {
       localStorage.setItem("User", JSON.stringify(response));
       setUser(response);
     },
-    [registerInfo]
+    [loginInfo]
   );
 
   const logoutUser = useCallback(() => {
