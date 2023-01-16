@@ -4,7 +4,7 @@ import { AuthContext } from "../context/AuthContext";
 
 const Login = () => {
   const { loginInfo, updateLoginInfo, loginUser, loginError, isLoginLoading } =
-    useContext(AuthContext);
+    useContext(AuthContext); 
 
   return (
     <>
