@@ -1,15 +1,16 @@
 import { Container, Nav, Navbar, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Logo from "../assets/AR2.svg";
 
 
 
 
 const NavBar = () => {
-  return <Navbar bg="info" className="mb-4" style={{ height: "4.75rem" }}>
+  return <Navbar bg="info" className="mb-4" style={{ height: "5.75rem" }}>
     <Container>
       <h2>
         <Link to="/" className="link-light text-decoration-none">
-          <img src="./assets/AROK.svg" alt="ChatAPP" />
+          <img src={Logo} alt="ChatApp"  width="65" height="65" />
         </Link>
       </h2>
       <span className="text-success">Logged in as Antonio</span>
