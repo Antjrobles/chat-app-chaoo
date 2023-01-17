@@ -12,11 +12,11 @@ const NavBar = () => {
 
   return <Navbar bg="info" className="mb-4" style={{ height: "5.75rem" }}>
     <Container>
-      <h2>
+      <h1>
         <Link to="/" className="link-light text-decoration-none">
           <img src={Logo} alt="ChatApp" width="65" height="65" />
         </Link>
-      </h2>
+      </h1>
       {user && (    /* If user is logged in, show user name */
         <span className="text-success">Logged in as {user?.name}</span>
       )}  
@@ -33,10 +33,10 @@ const NavBar = () => {
           {!user && (  // If user is not logged in, show login and register links
             <>
               <Link to="/login" className="link-dark text-decoration-none">
-                Login
+                <h2>Login</h2>
               </Link>
               <Link to="/register" className="link-dark text-decoration-none">
-                Register
+               <h2>Register</h2>
               </Link>
             </>
           )}

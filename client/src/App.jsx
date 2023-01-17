@@ -7,6 +7,7 @@ import { Container } from 'react-bootstrap';
 import NavBar from './components/NavBar';
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthContext';
+import Footer from './components/Footer';
 
 function App() {
   const {user} = useContext(AuthContext);
@@ -22,6 +23,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Container>
+      <Footer />
     </>
   )
 };

@@ -7,3 +7,27 @@ body {
   font-family: "Nunito", sans-serif;
   background: #010026;
 }
+
+
+h2 {
+  --c:linear-gradient(#000 0 0); /* update the color here */
+  
+  padding-bottom: .15em;
+  background: var(--c), var(--c);
+  background-size: .3em .1em;
+  background-position:50% 100%;
+  background-repeat: no-repeat;
+  transition: .3s linear, background-size .3s .2s linear;
+}
+h2:hover {
+  color: rgb(119, 153, 54);
+  background-size: 40% .1em;
+  background-position: 10% 100%, 90% 100%;
+}
+
+
+
+
+
+
+
